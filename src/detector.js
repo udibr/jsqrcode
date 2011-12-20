@@ -371,12 +371,12 @@ function Detector(image)
 				var estAlignmentY = Math.floor (topLeft.Y + correctionToTopLeft * (bottomRightY - topLeft.Y));
 				
 				// Kind of arbitrary -- expand search radius before giving up
-				for (var i = 4; i <= 16; i <<= 1)
+				//UDI for (var i = 4; i <= 16; i <<= 1)
 				{
 					//try
 					//{
 						alignmentPattern = this.findAlignmentInRegion(moduleSize, estAlignmentX, estAlignmentY,  i);
-						break;
+						//UDI break;
 					//}
 					//catch (re)
 					//{
